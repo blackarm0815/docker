@@ -72,7 +72,7 @@ services:
       - "8005:80/tcp"
     environment:
       TZ: 'America/Chicago'
-      # WEBPASSWORD: 'set a secure password here or it will be random'
+      WEBPASSWORD: 'letmein'
     volumes:
       - './etc-pihole:/etc/pihole'
       - './etc-dnsmasq.d:/etc/dnsmasq.d'
