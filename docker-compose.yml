@@ -54,3 +54,13 @@ services:
     image: ociotec/tetris
     ports:
       - 8003:80
+
+  webserver:
+    build: webserver
+    ports:
+    - "8004:80"
+    environment:
+    - NGINX_HOST=foobar.com
+    - NGINX_PORT=80
+
+    
