@@ -22,7 +22,7 @@ services:
     image: octoprint/octoprint
     restart: unless-stopped
     ports:
-      - 80:80 # first port is on localhost, second is on the docker container
+      - 8005:80 # first port is on localhost, second is on the docker container
     # devices:
     # use `python -m serial.tools.miniterm` to see what the name is of the printer, this requires pyserial
     #  - /dev/ttyACM0:/dev/ttyACM0
